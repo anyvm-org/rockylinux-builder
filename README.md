@@ -1,11 +1,11 @@
 
 
-[![Build](https://github.com/anyvm-org/rocky-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/rocky-builder/actions/workflows/build.yml)
+[![Build](https://github.com/anyvm-org/rockylinux-builder/actions/workflows/build.yml/badge.svg)](https://github.com/anyvm-org/rockylinux-builder/actions/workflows/build.yml)
 
 Latest: v2.0.0
 
 
-The image builder for `rocky`
+The image builder for `rockylinux`
 
 
 All the supported releases are here:
@@ -26,7 +26,7 @@ are all in BaseOS, so every other sync method listed above is real.
 How the images are built:
 
 Each image is built automatically in the
-[anyvm-org/rocky-builder](https://github.com/anyvm-org/rocky-builder)
+[anyvm-org/rockylinux-builder](https://github.com/anyvm-org/rockylinux-builder)
 repo's GitHub Actions: it downloads the official Rocky Linux
 GenericCloud image, customizes it (serial console, ssh, first-boot
 setup), boots it in QEMU, pre-installs the packages listed in the conf,
@@ -52,6 +52,6 @@ How to build:
 
     Just clone the repo. and run:
     ```bash
-    python3 build.py conf/rocky-9.conf
+    python3 build.py conf/rockylinux-9.conf
     ```
    
