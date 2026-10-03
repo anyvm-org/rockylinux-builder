@@ -26,10 +26,10 @@ jobs:
     - name: Sleep
       run: |
         for i in $(seq 1 10) ; do echo $i; sleep 1; done
-        latest=$(cat $(ls conf/rocky-*.conf | tail -1) | grep VM_RELEASE | cut -d = -f 2)
+        latest=$(cat $(ls conf/rockylinux-*.conf | tail -1) | grep VM_RELEASE | cut -d = -f 2)
         echo "please loging to ssh below, and run:"
         echo "============================="
-        echo "python3 build.py conf/rocky-$latest.conf"
+        echo "python3 build.py conf/rockylinux-$latest.conf"
         echo "============================="
         touch /tmp/keepalive
 
