@@ -21,7 +21,7 @@ SSH_OPTS=(
 
 # build.py writes the serial log under build/ (exported as VM_WORKDIR);
 # fall back to the repo root for a standalone hook run.
-SERIAL_LOG="${VM_WORKDIR:+$VM_WORKDIR/}${VM_OS_NAME:-rocky}.serial.log"
+SERIAL_LOG="${VM_WORKDIR:+$VM_WORKDIR/}${VM_OS_NAME:-rockylinux}.serial.log"
 
 # Where sshd is socket-activated, ssh.socket binds :22 well before sshd is
 # actually ready to serve. The first connection then waits while systemd

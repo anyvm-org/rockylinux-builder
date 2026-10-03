@@ -1,5 +1,5 @@
 {
-  "os": "rocky",
+  "os": "rockylinux",
   "releases": [
     {
       "tag": "9",

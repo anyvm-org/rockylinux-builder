@@ -29,7 +29,7 @@ SSH_OPTS=(
 
 # build.py writes the serial log under build/ (exported as VM_WORKDIR);
 # fall back to the repo root for a standalone hook run.
-SERIAL_LOG="${VM_WORKDIR:+$VM_WORKDIR/}${VM_OS_NAME:-rocky}.serial.log"
+SERIAL_LOG="${VM_WORKDIR:+$VM_WORKDIR/}${VM_OS_NAME:-rockylinux}.serial.log"
 
 _n=0
 # 240 iters * (timeout 30 + sleep 10) = up to ~2.5 h worst case; on KVM this

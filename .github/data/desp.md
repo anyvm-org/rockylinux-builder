@@ -1,7 +1,7 @@
 How the images are built:
 
 Each image is built automatically in the
-[anyvm-org/rocky-builder](https://github.com/anyvm-org/rocky-builder)
+[anyvm-org/rockylinux-builder](https://github.com/anyvm-org/rockylinux-builder)
 repo's GitHub Actions: it downloads the official Rocky Linux
 GenericCloud image, customizes it (serial console, ssh, first-boot
 setup), boots it in QEMU, pre-installs the packages listed in the conf,
